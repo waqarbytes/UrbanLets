@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant Service | Urban Lets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo-container">
+                    <div class="logo" id="logo">
+                        <img src="logo.png" alt="Urban Lets"
+                            class="logo-image">
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="owner-portal.html" class="dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="dropdown-link">Payment & Rental
+                                Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="tenant-service.html" class="dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="dropdown-link">Maintenance Request</a>
+                            <a href="rental-application.html" class="dropdown-link">Rental Application</a>
+                            <a href="notice-to-vacate.html" class="dropdown-link">Notice to Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="nav-link">About Us</a>
+                    <a href="contact-us.html" class="nav-link highlight">Contact Us</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-container">
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="owner-portal.html" class="mobile-dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="mobile-dropdown-link">Payment &
+                                Rental Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="tenant-service.html" class="mobile-dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="mobile-dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="mobile-dropdown-link">Maintenance
+                                Request</a>
+                            <a href="rental-application.html" class="mobile-dropdown-link">Rental
+                                Application</a>
+                            <a href="notice-to-vacate.html" class="mobile-dropdown-link">Notice to
+                                Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="mobile-nav-link">About Us</a>
+                    <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+                </nav>
+
+                <a href="contact-us.html" class="mobile-cta">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG9tZSUyMGludGVyaW9yfGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=80');">
+        <div class="page-header-content">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i data-lucide="chevron-right"></i>
+                <a href="#">Tenants</a>
+                <i data-lucide="chevron-right"></i>
+                <span>Tenant Service</span>
+            </div>
+            <h1>Tenant Services</h1>
+            <p>We're committed to making your rental experience exceptional from move-in to move-out.</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-content">
+                    <h2 class="text-3xl font-light mb-4">Your Home, Our Priority</h2>
+                    <p class="text-gray-600 mb-4">At Urban Lets, we believe that every tenant deserves a responsive, reliable property management team that truly cares about your comfort and satisfaction.</p>
+                    <p class="text-gray-600 mb-4">From addressing maintenance concerns to providing flexible payment options, our tenant services are designed to make your rental experience as pleasant and hassle-free as possible.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <h3>24/7 Support</h3>
+                            <p>Our team is available around the clock to address urgent maintenance issues and emergencies.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="smartphone"></i>
+                            </div>
+                            <h3>Tenant Portal</h3>
+                            <p>Access your account, make payments, and submit maintenance requests online anytime.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <h3>Rental Protection</h3>
+                            <p>Optional renter's insurance plans to protect your belongings and provide peace of mind.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="message-circle"></i>
+                            </div>
+                            <h3>Open Communication</h3>
+                            <p>Regular updates and transparent communication about your property and community.</p>
+                        </div>
+                    </div>
+                    <div class="section-buttons mt-8">
+                        <a href="contact-us.html" class="btn-primary">Contact Support <i data-lucide="arrow-right"></i></a>
+                        <a href="maintenance-request.html" class="btn-secondary">Request Maintenance</a>
+                    </div>
+                </div>
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGFwcHklMjB0ZW5hbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Happy Tenants" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Offerings</span>
+                <h2 class="section-title">Comprehensive Tenant Services</h2>
+                <p class="section-subtitle">From move-in to move-out, we're here to support you at every step of your rental journey.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <h3>Move-In Assistance</h3>
+                    <p>Thorough property orientations, detailed move-in inspection reports, and utility setup guidance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="credit-card"></i>
+                    </div>
+                    <h3>Flexible Payments</h3>
+                    <p>Multiple convenient payment options including online payments, autopay, and traditional methods.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="tool"></i>
+                    </div>
+                    <h3>Maintenance Services</h3>
+                    <p>Quick response to maintenance requests with skilled technicians and quality repair work.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="refresh-cw"></i>
+                    </div>
+                    <h3>Lease Renewals</h3>
+                    <p>Streamlined lease renewal process with clear communication about any changes or updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Community Events</h3>
+                    <p>Regular community gatherings and events to help you connect with your neighbors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="log-out"></i>
+                    </div>
+                    <h3>Move-Out Guidance</h3>
+                    <p>Clear move-out instructions, inspection scheduling, and security deposit processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <!-- <section class="landlord-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Tenants Say</h2>
+                <p class="section-subtitle">Read about the experiences of residents who live in our properties.</p>
+            </div>
+            
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <blockquote>
+                        I've been renting with Urban Lets for three years now, and I'm always impressed by how quickly they respond to maintenance requests. Their team is friendly and professional.
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Jennifer Adams" class="author-image">
+                        <div>
+                            <div class="author-name">Jennifer Adams</div>
+                            <div class="author-role">Tenant since 2020</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <blockquote>
+                        The online tenant portal is so convenient. I can pay rent, submit maintenance requests, and communicate with the property manager all in one place. It's made renting so much easier.
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Marcus Johnson" class="author-image">
+                        <div>
+                            <div class="author-name">Marcus Johnson</div>
+                            <div class="author-role">Tenant since 2021</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <blockquote>
+                        When I had an emergency plumbing issue on a Sunday evening, I expected to wait until Monday. I was amazed when they had someone at my door within the hour to fix the problem.
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Lisa Chen" class="author-image">
+                        <div>
+                            <div class="author-name">Lisa Chen</div>
+                            <div class="author-role">Tenant since 2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- FAQ Section -->
+    <section class="landlord-faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about our tenant services.</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">How do I submit a maintenance request?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>You can submit maintenance requests through your online tenant portal, by calling our office during business hours, or by using our maintenance request form on our website. For emergencies, please call our 24/7 emergency line.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What payment methods do you accept for rent?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>We accept online payments through the tenant portal (credit/debit card or bank transfer), automatic payments, personal checks, money orders, and cashier's checks. Cash is not accepted for security reasons.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I renew my lease?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>We typically contact tenants 60-90 days before their lease expires with renewal options. You can indicate your preference to renew through your tenant portal or by contacting your property manager directly.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What is your pet policy?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Pet policies vary by property. Generally, approved pets require a pet deposit and/or monthly pet rent. Service animals are exempt from pet fees but still require documentation. Please check your specific property's policy.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I report an emergency after hours?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>For emergencies that threaten life, property, or essential services (like no heat in winter), call our 24/7 emergency line at (123) 456-7890. For non-emergencies, please use the tenant portal or wait until business hours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">When will I get my security deposit back?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Security deposits are typically processed within 30 days of move-out, following a thorough inspection of the property. Any deductions will be itemized and included with your refund.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Can't find the answer you're looking for?</p>
+                <a href="contact-us.html" class="btn-primary">Contact Our Team <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Need assistance with your rental?</h2>
+                <p class="cta-subtitle">Our tenant support team is here to help make your rental experience exceptional.</p>
+                <div class="cta-buttons">
+                    <a href="contact-us.html" class="btn-primary">Contact Support <i data-lucide="arrow-right"></i></a>
+                    <a href="maintenance-request.html" class="btn-secondary">Submit Maintenance Request</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="Urban Lets" class="footer-logo-image">
+                    </a>
+                    <p class="footer-about">Urban Lets is a premium property management company dedicated to providing exceptional service for both landlords and tenants.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Landlords</h4>
+                    <div class="footer-links">
+                        <a href="owner-portal.html" class="footer-link">Owner Portal</a>
+                        <a href="payment-collection.html" class="footer-link">Payment Collection</a>
+                        <a href="#" class="footer-link">Property Marketing</a>
+                        <a href="#" class="footer-link">Tenant Screening</a>
+                        <a href="#" class="footer-link">Property Maintenance</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Tenants</h4>
+                    <div class="footer-links">
+                        <a href="tenant-service.html" class="footer-link">Tenant Service</a>
+                        <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="footer-link">Rental Listings</a>
+                        <a href="maintenance-request.html" class="footer-link">Maintenance Requests</a>
+                        <a href="rental-application.html" class="footer-link">Rental Application</a>
+                        <a href="notice-to-vacate.html" class="footer-link">Notice to Vacate</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            22C Brixton Road Mount <br>
+                                    Eden Auckland
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="contact-icon"></i>
+                            <a href="tel:+11234567890" class="contact-link">(123) 456-7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                          <a href="mailto:support@urbanlets.co.nz" class="contact-link">support@urbanlets.co.nz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <div class="container copyright-content">
+                    <p class="copyright-text">&copy; <span id="currentYear"></span> Urban Lets. All rights reserved.</p>
+                    <div class="copyright-links">
+                        <!-- <a href="#" class="copyright-link">Privacy Policy</a>
+                        <a href="#" class="copyright-link">Terms of Service</a>
+                        <a href="#" class="copyright-link">Sitemap</a> -->
+                        <p >Developed by International Data Solution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

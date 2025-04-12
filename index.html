@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Lets | Professional Property Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Required Lovable script tag -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="navbar" id="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <a href="index.html" class="logo-container">
+                        <div class="logo" id="logo">
+                            <img src="logo.png" alt="Urban Lets" class="logo-image">
+                        </div>
+                    </a>
+
+                    <nav class="desktop-nav">
+                        <a href="index.html" class="nav-link active">Home</a>
+
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                                <span>Landlords</span>
+                                <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="owner-portal.html" class="dropdown-link">Owner Portal</a>
+                                <a href="payment-collection.html" class="dropdown-link">Payment & Rental
+                                    Collection</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                                <span>Tenants</span>
+                                <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="tenant-service.html" class="dropdown-link">Tenant Service</a>
+                                <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                    class="dropdown-link">Rental Listings</a>
+                                <a href="maintenance-request.html" class="dropdown-link">Maintenance Request</a>
+                                <a href="rental-application.html" class="dropdown-link">Rental Application</a>
+                                <a href="notice-to-vacate.html" class="dropdown-link">Notice to Vacate</a>
+                            </div>
+                        </div>
+
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                        <a href="contact-us.html" class="nav-link highlight">Contact Us</a>
+                    </nav>
+
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-container">
+                    <nav class="mobile-nav">
+                        <a href="index.html" class="mobile-nav-link">Home</a>
+
+                        <div class="mobile-dropdown">
+                            <button class="mobile-dropdown-btn">
+                                <span>Landlords</span>
+                                <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                            </button>
+                            <div class="mobile-dropdown-content">
+                                <a href="owner-portal.html" class="mobile-dropdown-link">Owner Portal</a>
+                                <a href="payment-collection.html" class="mobile-dropdown-link">Payment &
+                                    Rental Collection</a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-dropdown">
+                            <button class="mobile-dropdown-btn">
+                                <span>Tenants</span>
+                                <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                            </button>
+                            <div class="mobile-dropdown-content">
+                                <a href="tenant-service.html" class="mobile-dropdown-link">Tenant Service</a>
+                                <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                    class="mobile-dropdown-link">Rental Listings</a>
+                                <a href="maintenance-request.html" class="mobile-dropdown-link">Maintenance
+                                    Request</a>
+                                <a href="rental-application.html" class="mobile-dropdown-link">Rental
+                                    Application</a>
+                                <a href="notice-to-vacate.html" class="mobile-dropdown-link">Notice to
+                                    Vacate</a>
+                            </div>
+                        </div>
+
+                        <a href="about-us.html" class="mobile-nav-link">About Us</a>
+                        <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+                    </nav>
+
+                    <a href="contact-us.html" class="mobile-cta">Get In Touch</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero" id="heroCarousel">
+                <div class="hero-slides">
+                    <div class="hero-slide active"
+                        style="background-image: url('https://images.unsplash.com/photo-1560448205-4d9b3e6bb6db?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                <span>Premium Shared Living</span>
+                                <span>For Modern Professionals</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                Urban Lets provides exceptional room rental experiences with high-quality shared
+                                spaces and professional property management.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                    class="btn-primary">
+                                    View Properties <i data-lucide="arrow-right"></i>
+                                </a>
+                                <a href="contact-us.html" class="btn-secondary">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                <span>Quality Living Spaces</span>
+                                <span>In Prime Locations</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                Discover our carefully curated properties in the most desirable areas of the city.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                    class="btn-primary">
+                                    View Properties <i data-lucide="arrow-right"></i>
+                                </a>
+                                <a href="contact-us.html" class="btn-secondary">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                <span>Expert Property Management</span>
+                                <span>For Landlords and Investors</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                Maximize your property's potential with our comprehensive management services.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="landlords.html" class="btn-primary">
+                                    Landlord Services <i data-lucide="arrow-right"></i>
+                                </a>
+                                <a href="contact-us.html" class="btn-secondary">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scroll indicator -->
+                <div class="scroll-indicator">
+                    <div class="scroll-icon">
+                        <div class="scroll-dot"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-tag">Our Services</p>
+                        <h2 class="section-title">
+                            Comprehensive Solutions for Landlords and Tenants
+                        </h2>
+                        <p class="section-subtitle">
+                            Urban Lets offers a complete range of property management and rental services
+                            designed to create exceptional experiences for both property owners and residents.
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="building"></i>
+                            </div>
+                            <h3 class="service-title">Property Management</h3>
+                            <p class="service-description">
+                                Complete property management services tailored to maximize your rental income while
+                                minimizing your day-to-day involvement.
+                            </p>
+                            <a href="landlords.html" class="service-link">Learn More</a>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="coins"></i>
+                            </div>
+                            <h3 class="service-title">Rent Collection</h3>
+                            <p class="service-description">
+                                Reliable, on-time rent collection with detailed financial reporting and efficient
+                                payment processing.
+                            </p>
+                            <a href="payment-collection.html" class="service-link">Learn More</a>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="home"></i>
+                            </div>
+                            <h3 class="service-title">Curated Properties</h3>
+                            <p class="service-description">
+                                High-quality shared living spaces in desirable locations, carefully selected to meet our
+                                exacting standards.
+                            </p>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                class="service-link">Learn More</a>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <h3 class="service-title">Tenant Screening</h3>
+                            <p class="service-description">
+                                Through background and reference checks to ensure suitable, reliable tenants for your
+                                property.
+                            </p>
+                            <a href="landlords.html" class="service-link">Learn More</a>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="key"></i>
+                            </div>
+                            <h3 class="service-title">Tenant Services</h3>
+                            <p class="service-description">
+                                Responsive support and services to ensure a comfortable, hassle-free living experience
+                                for all residents.
+                            </p>
+                            <a href="tenant-service.html" class="service-link">Learn More</a>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h3 class="service-title">Community Focus</h3>
+                            <p class="service-description">
+                                Creating harmonious shared living environments where residents can connect and thrive
+                                together.
+                            </p>
+                            <a href="about-us.html" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-content">
+                            <div class="about-header">
+                                <p class="section-tag">About Urban Lets</p>
+                                <h2 class="section-title">
+                                    Elevating Shared Living Experiences
+                                </h2>
+                            </div>
+
+                            <div class="about-text">
+                                <p>
+                                    Urban Lets, we connect tenants and landlords with ease. Whether you’re looking
+                                    for a cozy space to call home or seeking reliable tenants for your property, our
+                                    platform streamlines the rental process, ensuring transparency, convenience, and
+                                    satisfaction for all.
+                                </p>
+
+                                <p>
+                                    Our mission is to simplify the search for the perfect living space while fostering
+                                    meaningful connections between tenants and landlords. At Find a Room, your comfort
+                                    and peace of mind are our priorities. Whether you’re moving in or moving on, we make
+                                    finding a room simple, quick, and stress-free!
+                                </p>
+
+                                <!-- <p>
+                                    With professional property management and attentive customer service, we ensure
+                                    that both landlords and tenants enjoy a seamless, stress-free experience from start
+                                    to finish.
+                                </p> -->
+                            </div>
+
+                            <!-- <div class="stats-grid">
+                                <div class="stat">
+                                    <div class="stat-value">15+</div>
+                                    <p class="stat-label">Years Experience</p>
+                                </div>
+
+                                <div class="stat">
+                                    <div class="stat-value">200+</div>
+                                    <p class="stat-label">Properties Managed</p>
+                                </div>
+
+                                <div class="stat">
+                                    <div class="stat-value">98%</div>
+                                    <p class="stat-label">Customer Satisfaction</p>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="about-image-container">
+                            <div class="about-image">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1888&q=80"
+                                    alt="Modern shared living space">
+                                <div class="about-image-caption">
+                                    <p>"We believe that exceptional living spaces foster exceptional communities."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <!-- <section class="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-tag">Testimonials</p>
+                        <h2 class="section-title">
+                            What Our Clients Say
+                        </h2>
+                    </div>
+
+                    <div class="testimonial-slider">
+                        <div class="testimonial-track" id="testimonialTrack">
+                            <div class="testimonial-slide">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-avatar">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+                                            alt="David Thompson">
+                                    </div>
+
+                                    <div class="testimonial-text">
+                                        <div class="testimonial-icon">
+                                            <i data-lucide="quote"></i>
+                                        </div>
+                                        <blockquote>
+                                            "Urban Lets has completely transformed our property management experience.
+                                            Their attention to detail and proactive communication is unmatched."
+                                        </blockquote>
+                                        <div class="testimonial-author">
+                                            <div class="testimonial-line"></div>
+                                            <div>
+                                                <div class="testimonial-name">David Thompson</div>
+                                                <div class="testimonial-position">Property Owner</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-slide">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-avatar">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+                                            alt="Sarah Johnson">
+                                    </div>
+
+                                    <div class="testimonial-text">
+                                        <div class="testimonial-icon">
+                                            <i data-lucide="quote"></i>
+                                        </div>
+                                        <blockquote>
+                                            "As a tenant, I've never felt more supported. Maintenance requests are
+                                            addressed promptly, and the quality of the shared spaces exceeds my
+                                            expectations."
+                                        </blockquote>
+                                        <div class="testimonial-author">
+                                            <div class="testimonial-line"></div>
+                                            <div>
+                                                <div class="testimonial-name">Sarah Johnson</div>
+                                                <div class="testimonial-position">Tenant</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-slide">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-avatar">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+                                            alt="Michael Rodriguez">
+                                    </div>
+
+                                    <div class="testimonial-text">
+                                        <div class="testimonial-icon">
+                                            <i data-lucide="quote"></i>
+                                        </div>
+                                        <blockquote>
+                                            "The level of professionalism at Urban Lets is exceptional. They've managed
+                                            my multiple properties for years, and I couldn't be happier with the
+                                            results."
+                                        </blockquote>
+                                        <div class="testimonial-author">
+                                            <div class="testimonial-line"></div>
+                                            <div>
+                                                <div class="testimonial-name">Michael Rodriguez</div>
+                                                <div class="testimonial-position">Property Investor</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-controls">
+                            <button id="testimonialPrev" class="testimonial-btn" aria-label="Previous testimonial">
+                                <i data-lucide="chevron-left"></i>
+                            </button>
+
+                            <div class="testimonial-indicators">
+                                <button class="testimonial-indicator active" data-index="0"
+                                    aria-label="Go to testimonial 1"></button>
+                                <button class="testimonial-indicator" data-index="1"
+                                    aria-label="Go to testimonial 2"></button>
+                                <button class="testimonial-indicator" data-index="2"
+                                    aria-label="Go to testimonial 3"></button>
+                            </div>
+
+                            <button id="testimonialNext" class="testimonial-btn" aria-label="Next testimonial">
+                                <i data-lucide="chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+
+
+
+            <!-- Property Listings Section -->
+            <section class="property-listings">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-tag">Our Properties</p>
+                        <h2 class="section-title">
+                            Available Properties in Auckland
+                        </h2>
+                        <p class="section-subtitle">
+                            Discover our range of high-quality shared living spaces in prime Auckland locations.
+                            Each property is carefully maintained to ensure a comfortable and enjoyable living
+                            experience.
+                        </p>
+                    </div>
+
+                    <div class="property-container">
+                        <!-- Mt Wellington Properties -->
+                        <div class="property-location-group">
+                            <h3 class="location-title"><i data-lucide="map-pin"></i> Mt Wellington</h3>
+                            <div class="property-cards">
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=1/14 Tomuri Place, Mt Wellington, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>1/14 Tomuri Place, Mt Wellington</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=4/14 Tomuri Place, Mt Wellington, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>4/14 Tomuri Place, Mt Wellington</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=6/14 Tomuri Place, Mt Wellington, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>6/14 Tomuri Place, Mt Wellington</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=8/14 Tomuri Place, Mt Wellington, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>8/14 Tomuri Place, Mt Wellington</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=2/117 Mt Wellington Highway, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>2/117 Mt Wellington Highway</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=5/117 Mt Wellington Highway, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>5/117 Mt Wellington Highway</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=7/117 Mt Wellington Highway, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>7/117 Mt Wellington Highway</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Waterview Properties -->
+                        <div class="property-location-group">
+                            <h3 class="location-title"><i data-lucide="map-pin"></i> Waterview</h3>
+                            <div class="property-cards">
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=1/1499 Great North Rd, Waterview, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>1/1499 Great North Rd, Waterview</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=6/1499 Great North Rd, Waterview, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>6/1499 Great North Rd, Waterview</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Avondale Properties -->
+                        <div class="property-location-group">
+                            <h3 class="location-title"><i data-lucide="map-pin"></i> Avondale</h3>
+                            <div class="property-cards">
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=5/15 Crayford St, Avondale, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>5/15 Crayford St, Avondale</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=6/15 Crayford St, Avondale, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>6/15 Crayford St, Avondale</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=7/15 Crayford St, Avondale, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>7/15 Crayford St, Avondale</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=8/15 Crayford St, Avondale, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>8/15 Crayford St, Avondale</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Onehunga Properties -->
+                        <div class="property-location-group">
+                            <h3 class="location-title"><i data-lucide="map-pin"></i> Onehunga</h3>
+                            <div class="property-cards">
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=2/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>2/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=3/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>3/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=4/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>4/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=6/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>6/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=10/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>10/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=16/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>16/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=19/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>19/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=23/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>23/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=24/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>24/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=25/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>25/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=28/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>28/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=29/59 Spring St, Onehunga, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>29/59 Spring St, Onehunga</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Mt Eden Properties -->
+                        <div class="property-location-group">
+                            <h3 class="location-title"><i data-lucide="map-pin"></i> Mt Eden</h3>
+                            <div class="property-cards">
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=22c Brixton Rd, Mt Eden, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>22c Brixton Rd, Mt Eden</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Royal Oak Properties -->
+                        <div class="property-location-group">
+                            <h3 class="location-title"><i data-lucide="map-pin"></i> Royal Oak</h3>
+                            <div class="property-cards">
+                                <div class="property-card">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=880 Manukau Road, Royal Oak, Auckland, New Zealand" class="property-link">
+                                        <i data-lucide="home"></i>
+                                        <span>880 Manukau Road, Royal Oak</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <!-- CTA Section -->
+            <section class="cta">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready to Experience Better Rental Living?</h2>
+                        <p class="cta-subtitle">
+                            Contact us today to discover our available properties or learn more about our
+                            property management services.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="contact-us.html" class="btn-primary">
+                                Get In Touch <i data-lucide="arrow-right"></i>
+                            </a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                class="btn-secondary">
+                                Browse Properties
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Column 1: Logo & About -->
+                    <div class="footer-col">
+                        <a href="index.html" class="footer-logo">
+                            <img src="logo.png" alt="Urban Lets" class="footer-logo-image">
+                        </a>
+                        <p class="footer-about">
+                            Urban Lets provides premier room rental services with a focus on
+                            quality shared living spaces and exceptional property management.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Quick Links -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="landlords.html" class="footer-link">Landlords</a></li>
+                            <li><a href="tenants.html" class="footer-link">Tenants</a></li>
+                            <li><a href="about-us.html" class="footer-link">About Us</a></li>
+                            <li><a href="contact-us.html" class="footer-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Services -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="owner-portal.html" class="footer-link">Owner Portal</a></li>
+                            <li><a href="payment-collection.html" class="footer-link">Payment Collection</a>
+                            </li>
+                            <li><a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                    class="footer-link">Rental Listings</a></li>
+                            <li><a href="maintenance-request.html" class="footer-link">Maintenance Requests</a>
+                            </li>
+                            <li><a href="rental-application.html" class="footer-link">Rental Applications</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Contact -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Contact Us</h3>
+                        <ul class="footer-contact">
+                            <li class="contact-item">
+                                <i data-lucide="map-pin" class="contact-icon"></i>
+                                <span>
+                                   22C Brixton Road Mount <br>
+                                    Eden Auckland
+                                </span>
+                            </li>
+                            <li class="contact-item">
+                                <i data-lucide="phone" class="contact-icon"></i>
+                                <a href="tel:+6499876543" class="contact-link">(09) 987 6543</a>
+                            </li>
+                            <li class="contact-item">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                              <a href="mailto:support@urbanlets.co.nz" class="contact-link">support@urbanlets.co.nz</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="copyright-content">
+                        <p class="copyright-text">
+                            &copy; <span id="currentYear">2023</span> Urban Lets. All rights reserved.
+                        </p>
+                        <div class="copyright-links">
+                            <!-- <a href="#" class="copyright-link">Privacy Policy</a>
+                            <a href="#" class="copyright-link">Terms of Service</a> -->
+                            <p>Developed by International Data Solution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- AI Assistant -->
+        <div id="ai-assistant"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

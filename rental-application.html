@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Application | Urban Lets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <div class="logo-container">
+                <a href="index.html" class="logo" id="logo">
+                    <img src="logo.png" alt="Urban Lets" class="logo-image">
+                </a>
+            </div>
+            
+            <div class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        Landlords <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="owner-portal.html" class="dropdown-link">Owner Portal</a>
+                        <a href="payment-collection.html" class="dropdown-link">Payment & Rental Collection</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropdown-btn active">
+                        Tenants <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="tenant-service.html" class="dropdown-link">Tenant Service</a>
+                        <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="dropdown-link">Rental Listings</a>
+                        <a href="maintenance-request.html" class="dropdown-link">Maintenance Request</a>
+                        <a href="rental-application.html" class="dropdown-link">Rental Application</a>
+                        <a href="notice-to-vacate.html" class="dropdown-link">Notice to Vacate</a>
+                    </div>
+                </div>
+                
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="contact-us.html" class="nav-link highlight">Contact Us</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-container">
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn">
+                        Landlords <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                    </button>
+                    <div class="mobile-dropdown-content">
+                        <a href="owner-portal.html" class="mobile-dropdown-link">Owner Portal</a>
+                        <a href="payment-collection.html" class="mobile-dropdown-link">Payment & Rental Collection</a>
+                    </div>
+                </div>
+                
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn active">
+                        Tenants <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                    </button>
+                    <div class="mobile-dropdown-content">
+                        <a href="tenant-service.html" class="mobile-dropdown-link">Tenant Service</a>
+                        <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="mobile-dropdown-link">Rental Listings</a>
+                        <a href="maintenance-request.html" class="mobile-dropdown-link">Maintenance Request</a>
+                        <a href="rental-application.html" class="mobile-dropdown-link">Rental Application</a>
+                        <a href="notice-to-vacate.html" class="mobile-dropdown-link">Notice to Vacate</a>
+                    </div>
+                </div>
+                
+                <a href="about-us.html" class="mobile-nav-link">About Us</a>
+                <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+            </nav>
+            
+            <a href="contact-us.html" class="mobile-cta">Get in Touch</a>
+        </div>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvcGVydHklMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=80');">
+        <div class="page-header-content">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i data-lucide="chevron-right"></i>
+                <a href="#">Tenants</a>
+                <i data-lucide="chevron-right"></i>
+                <span>Rental Application</span>
+            </div>
+            <h1>Rental Application</h1>
+            <p>Find a Room - Apply for your next home with our streamlined application process.</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-content">
+                    <h2 class="text-3xl font-light mb-4">Room Application Process</h2>
+                    <p class="text-gray-600 mb-4">Looking for a room in Auckland? Our application process is straightforward and designed to help match you with the perfect living situation.</p>
+                    <p class="text-gray-600 mb-4">Complete our online application form below, and we'll get back to you within 24-48 hours to schedule viewings for suitable rooms.</p>
+                    <div class="stats-grid mt-8">
+                        <div class="stat">
+                            <div class="stat-value">5min</div>
+                            <div class="stat-label">Application Time</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">24hrs</div>
+                            <div class="stat-label">Response Time</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">Private Process</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50JTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Room Rental" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Application Process -->
+    <section class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Finding Your Perfect Room</h2>
+                <p class="section-subtitle">Our simple 4-step process makes finding your next room easy.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3>1. Apply Online</h3>
+                    <p>Fill out our simple online application form with your details and room preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3>2. Room Matching</h3>
+                    <p>We'll match you with available rooms that fit your preferences and budget.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <h3>3. Viewings</h3>
+                    <p>Schedule viewings of rooms that interest you to meet potential flatmates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <h3>4. Move In</h3>
+                    <p>Once you've found your perfect room, sign the agreement and move in!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Application Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Apply Now</span>
+                <h2 class="section-title">Room Application Form</h2>
+                <p class="section-subtitle">Fill out the form below to start your room search journey.</p>
+            </div>
+            
+            <div class="form-wrapper shadow-lg">
+                <div class="form-content">
+                    <h2>Find A Room Application</h2>
+                    <p>Tell us about yourself and what you're looking for in your next home.</p>
+                    
+                    <form id="rentalApplicationForm" class="contact-form">
+                        <h3 class="mb-4 text-lg font-medium">Personal Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="age" class="form-label">Age *</label>
+                            <input type="number" id="age" name="age" min="18" max="99" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="occupation" class="form-label">Occupation *</label>
+                            <select id="occupation" name="occupation" class="form-input" required>
+                                <option value="">Select your occupation</option>
+                                <option value="full-time">Full-time Employee</option>
+                                <option value="part-time">Part-time Employee</option>
+                                <option value="self-employed">Self-employed</option>
+                                <option value="student">Student</option>
+                                <option value="unemployed">Unemployed</option>
+                                <option value="retired">Retired</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <h3 class="mt-8 mb-4 text-lg font-medium">Room Preferences</h3>
+                        
+                        <div class="form-group">
+                            <label for="moveInDate" class="form-label">When do you want to move in? *</label>
+                            <input type="date" id="moveInDate" name="moveInDate" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="stayDuration" class="form-label">How long do you plan to stay? *</label>
+                            <select id="stayDuration" name="stayDuration" class="form-input" required>
+                                <option value="">Select duration</option>
+                                <option value="1-3">1-3 months</option>
+                                <option value="3-6">3-6 months</option>
+                                <option value="6-12">6-12 months</option>
+                                <option value="12+">12+ months</option>
+                                <option value="unsure">Not sure yet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="maxBudget" class="form-label">Maximum Weekly Budget (NZD) *</label>
+                            <input type="number" id="maxBudget" name="maxBudget" min="100" step="10" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredLocation" class="form-label">Preferred Auckland Locations *</label>
+                            <select id="preferredLocation" name="preferredLocation" class="form-input" multiple size="4" required>
+                                <option value="cbd">Auckland CBD</option>
+                                <option value="ponsonby">Ponsonby</option>
+                                <option value="newmarket">Newmarket</option>
+                                <option value="parnell">Parnell</option>
+                                <option value="kingsland">Kingsland</option>
+                                <option value="mteden">Mt Eden</option>
+                                <option value="epsom">Epsom</option>
+                                <option value="greylynn">Grey Lynn</option>
+                                <option value="mtalbert">Mt Albert</option>
+                                <option value="remuera">Remuera</option>
+                                <option value="northshore">North Shore</option>
+                                <option value="other">Other (please specify)</option>
+                            </select>
+                            <p class="form-hint">Hold CTRL/CMD to select multiple locations</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="otherLocation" class="form-label">Other Location Preferences</label>
+                            <input type="text" id="otherLocation" name="otherLocation" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="roomType" class="form-label">Room Type Preference *</label>
+                            <select id="roomType" name="roomType" class="form-input" required>
+                                <option value="">Select room type</option>
+                                <option value="single">Single Room</option>
+                                <option value="double">Double Room</option>
+                                <option value="ensuite">Ensuite Room</option>
+                                <option value="studio">Studio Apartment</option>
+                                <option value="any">Any</option>
+                            </select>
+                        </div>
+                        
+                        <h3 class="mt-8 mb-4 text-lg font-medium">About You</h3>
+                        
+                        <div class="form-group">
+                            <label for="aboutYourself" class="form-label">Tell us about yourself *</label>
+                            <textarea id="aboutYourself" name="aboutYourself" class="form-textarea" rows="4" required placeholder="Your interests, lifestyle, personality..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cleaningHabits" class="form-label">Cleaning habits *</label>
+                            <select id="cleaningHabits" name="cleaningHabits" class="form-input" required>
+                                <option value="">Select option</option>
+                                <option value="very-tidy">Very tidy</option>
+                                <option value="tidy">Tidy</option>
+                                <option value="average">Average</option>
+                                <option value="casual">Casual</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Do you smoke? *</label>
+                            <div class="radio-options">
+                                <label class="radio-label">
+                                    <input type="radio" name="smoker" value="yes" required> Yes
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="smoker" value="no" required> No
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="smoker" value="outside-only" required> Outside only
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Do you have pets? *</label>
+                            <div class="radio-options">
+                                <label class="radio-label">
+                                    <input type="radio" name="pets" value="yes" required> Yes
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="pets" value="no" required> No
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" id="petDetailsGroup" style="display:none;">
+                            <label for="petDetails" class="form-label">Pet details</label>
+                            <textarea id="petDetails" name="petDetails" class="form-textarea" placeholder="Type, breed, size, age..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="additionalRequirements" class="form-label">Additional Requirements or Questions</label>
+                            <textarea id="additionalRequirements" name="additionalRequirements" class="form-textarea"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div>
+                                <input type="checkbox" id="authorizeCheck" name="authorizeCheck" required>
+                                <label for="authorizeCheck">I confirm that all information provided is accurate and I consent to being contacted about room opportunities. *</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Submit Application <i data-lucide="send"></i></button>
+                    </form>
+                </div>
+                <div class="form-image">
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJvb20lMjBhcGFydG1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Room for Rent">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="landlord-faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Room Rental FAQs</h2>
+                <p class="section-subtitle">Common questions about finding a room in Auckland.</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">What's included in the room price?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Room prices typically include rent and utilities (power, water, internet), but this varies by property. We always specify what's included in each listing, and you can filter rooms by what's included in the price.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How does the viewing process work?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>After we receive your application, we'll contact you with suitable room options. If you're interested, we'll arrange viewings at times that work for you and the current tenants. You'll have the opportunity to see the room, common areas, and meet potential flatmates.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is a bond required?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Yes, most rooms require a bond (usually 2-4 weeks' rent) plus 1-2 weeks' rent in advance. The bond is held by Tenancy Services and returned at the end of your tenancy, provided there's no damage or unpaid rent.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can international students or workers apply?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Absolutely! We welcome applications from international students and workers. Many of our rooms are perfect for newcomers to Auckland, and we can help guide you through the process if you're unfamiliar with NZ rental procedures.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How long does it take to find a room?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Most applicants find a suitable room within 1-2 weeks. The timeframe depends on your budget, location preferences, and room availability. We recommend applying at least 2-3 weeks before your desired move-in date.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Are bills included in the rent?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>This varies by property. Some include all bills (power, water, internet), while others charge bills separately or have a bills contribution amount on top of rent. Each listing specifies the arrangement.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Have more questions about finding a room in Auckland?</p>
+                <a href="contact-us.html" class="btn-primary">Contact Our Team <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to find your perfect room?</h2>
+                <p class="cta-subtitle">Submit your application today and let us help you find your next home.</p>
+                <div class="cta-buttons">
+                    <a href="rental-application.html" class="btn-primary">Apply Now <i data-lucide="arrow-right"></i></a>
+                    <a href="contact-us.html" class="btn-secondary">Contact Us With Questions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="Urban Lets" class="footer-logo-image">
+                    </a>
+                    <p class="footer-about">Urban Lets is a premium property management company dedicated to providing exceptional service for both landlords and tenants.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Landlords</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="about-us.html" class="footer-link">About us</a>
+                        <a href="owner-portal.html" class="footer-link">Owner Portal</a>
+                        <a href="payment-collection.html" class="footer-link">Payment & Collection</a>
+                        <!-- <a href="#" class="footer-link">Property Maintenance</a> -->
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Tenants</h4>
+                    <div class="footer-links">
+                        <a href="tenant-service.html" class="footer-link">Tenant Service</a>
+                        <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="footer-link">Rental Listings</a>
+                        <a href="maintenance-request.html" class="footer-link">Maintenance Requests</a>
+                        <a href="rental-application.html" class="footer-link">Rental Application</a>
+                        <a href="notice-to-vacate.html" class="footer-link">Notice to Vacate</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            22C Brixton Road Mount <br>
+                                    Eden Auckland
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="contact-icon"></i>
+                            <a href="tel:+11234567890" class="contact-link">(123) 456-7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                          <a href="mailto:support@urbanlets.co.nz" class="contact-link">support@urbanlets.co.nz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <div class="container copyright-content">
+                    <p class="copyright-text">&copy; <span id="currentYear"></span> Urban Lets. All rights reserved.</p>
+                    <div class="copyright-links">
+                        <!-- <a href="#" class="copyright-link">Privacy Policy</a> -->
+                        <!-- <a href="#" class="copyright-link">Terms of Service</a>
+                        <a href="#" class="copyright-link">Sitemap</a> -->
+                        <p >Developed by International Data Solution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Form Submission Handler
+        document.getElementById('rentalApplicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Normally you would send the form data to a server here
+            alert('Your room application has been submitted! We will contact you within 24-48 hours to discuss suitable room options.');
+            this.reset();
+        });
+        
+        // Show/hide pet details based on selection
+        document.querySelectorAll('input[name="pets"]').forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                const petDetailsGroup = document.getElementById('petDetailsGroup');
+                if (this.value === 'yes') {
+                    petDetailsGroup.style.display = 'block';
+                } else {
+                    petDetailsGroup.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

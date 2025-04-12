@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Urban Lets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header - Same as index.html -->
+        <header class="navbar" id="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <a href="index.html" class="logo-container">
+                        <div class="logo" id="logo">
+                            <img src="logo.png" alt="Urban Lets" class="logo-image">
+                        </div>
+                    </a>
+
+                    <nav class="desktop-nav">
+                        <a href="index.html" class="nav-link active">Home</a>
+
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                                <span>Landlords</span>
+                                <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="owner-portal.html" class="dropdown-link">Owner Portal</a>
+                                <a href="payment-collection.html" class="dropdown-link">Payment & Rental
+                                    Collection</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                                <span>Tenants</span>
+                                <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="tenant-service.html" class="dropdown-link">Tenant Service</a>
+                                <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                    class="dropdown-link">Rental Listings</a>
+                                <a href="maintenance-request.html" class="dropdown-link">Maintenance Request</a>
+                                <a href="rental-application.html" class="dropdown-link">Rental Application</a>
+                                <a href="notice-to-vacate.html" class="dropdown-link">Notice to Vacate</a>
+                            </div>
+                        </div>
+
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                        <a href="contact-us.html" class="nav-link highlight">Contact Us</a>
+                    </nav>
+
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-container">
+                    <nav class="mobile-nav">
+                        <a href="index.html" class="mobile-nav-link">Home</a>
+
+                        <div class="mobile-dropdown">
+                            <button class="mobile-dropdown-btn">
+                                <span>Landlords</span>
+                                <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                            </button>
+                            <div class="mobile-dropdown-content">
+                                <a href="owner-portal.html" class="mobile-dropdown-link">Owner Portal</a>
+                                <a href="payment-collection.html" class="mobile-dropdown-link">Payment &
+                                    Rental Collection</a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-dropdown">
+                            <button class="mobile-dropdown-btn">
+                                <span>Tenants</span>
+                                <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                            </button>
+                            <div class="mobile-dropdown-content">
+                                <a href="tenant-service.html" class="mobile-dropdown-link">Tenant Service</a>
+                                <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                    class="mobile-dropdown-link">Rental Listings</a>
+                                <a href="maintenance-request.html" class="mobile-dropdown-link">Maintenance
+                                    Request</a>
+                                <a href="rental-application.html" class="mobile-dropdown-link">Rental
+                                    Application</a>
+                                <a href="notice-to-vacate.html" class="mobile-dropdown-link">Notice to
+                                    Vacate</a>
+                            </div>
+                        </div>
+
+                        <a href="about-us.html" class="mobile-nav-link">About Us</a>
+                        <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+                    </nav>
+
+                    <a href="contact-us.html" class="mobile-cta">Get In Touch</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Page Header -->
+            <section class="page-header"
+                style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1474&q=80');">
+                <div class="container">
+                    <div class="page-header-content">
+                        <nav class="breadcrumbs">
+                            <a href="index.html">Home</a>
+                            <i data-lucide="chevron-right"></i>
+                            <span>Contact Us</span>
+                        </nav>
+                        <h1>Contact Us</h1>
+                        <p>We're here to answer your questions and help with your property needs</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Information Section -->
+            <section class="contact-info">
+                <div class="container">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <h3>Our Office</h3>
+                            <p>22C Brixton Road Mount <br>
+                                Eden Auckland</p>
+                            <a href="https://www.google.com/maps/search/22C+Brixton+Road+Mount+Eden+Auckland?entry=gmail&source=g" target="_blank" class="info-link">Get Directions</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <p>Main: (09) 987 6543<br>Emergencies: (09) 987 6543 ext 1</p>
+                            <a href="tel:+6499876543" class="info-link">Call Us</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>support@urbanlets.co.nz</p>
+                            <a href="mailto:support@urbanlets.co.nz" class="info-link">Send Email</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <h3>Office Hours</h3>
+                            <p>Monday-Friday: 9am - 5pm<br>Saturday: 10am - 2pm</p>
+                            <a href="#contact-form" class="info-link">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section id="contact-form" class="contact-form-section">
+                <div class="container">
+                    <div class="form-wrapper">
+                        <div class="form-content">
+                            <h2>We'd Love to Hear From You</h2>
+                            <p>
+                                Whether you have questions about our properties, services, or would like
+                                to discuss your specific needs, our team is ready to assist you.
+                            </p>
+
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" id="name" name="name" class="form-input"
+                                        placeholder="Your full name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-input"
+                                        placeholder="your.email@example.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input"
+                                        placeholder="Your phone number">
+                                </div>
+
+                                <!-- <div class="form-group">
+                                    <label for="inquiry-type" class="form-label">Inquiry Type</label>
+                                    <select id="inquiry-type" name="inquiry-type" class="form-input">
+                                        <option value="general">General Inquiry</option>
+                                        <option value="rental">Rental Information</option>
+                                        <option value="property-management">Property Management</option>
+                                        <option value="maintenance">Maintenance Issue</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div> -->
+
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" name="message" class="form-textarea"
+                                        placeholder="How can we help you?" required></textarea>
+                                </div>
+
+                                <button type="submit" class="form-submit">Send Message</button>
+                            </form>
+                        </div>
+
+                        <div class="form-image">
+                            <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                                alt="Urban Lets office">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map Section -->
+            <section class="map-section">
+                <div class="map-container">
+                   
+
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.20577378118!2d174.74029918111103!3d-36.88542530060166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d464c3713f365%3A0xb4d68265c10545a1!2s22C%20Brixton%20Road%2C%20Mount%20Eden%2C%20Auckland%201024%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1744420352183!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer - Same as index.html -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Column 1: Logo & About -->
+                    <div class="footer-col">
+                        <a href="index.html" class="footer-logo">
+                            <img src="logo.png" alt="Urban Lets" class="footer-logo-image">
+                        </a>
+                        <p class="footer-about">
+                            Urban Lets provides premier room rental services with a focus on
+                            quality shared living spaces and exceptional property management.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Quick Links -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="landlords.html" class="footer-link">Landlords</a></li>
+                            <li><a href="tenants.html" class="footer-link">Tenants</a></li>
+                            <li><a href="about-us.html" class="footer-link">About Us</a></li>
+                            <li><a href="contact-us.html" class="footer-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Services -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="owner-portal.html" class="footer-link">Owner Portal</a></li>
+                            <li><a href="payment-collection.html" class="footer-link">Payment Collection</a>
+                            </li>
+                            <li><a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959"
+                                    class="footer-link">Rental Listings</a></li>
+                            <li><a href="maintenance-request.html" class="footer-link">Maintenance Requests</a>
+                            </li>
+                            <li><a href="rental-application.html" class="footer-link">Rental Applications</a>
+                            </li>
+                        </ul>
+                    </div> 
+
+                    <!-- Column 4: Contact -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Contact Us</h3>
+                        <ul class="footer-contact">
+                            <li class="contact-item">
+                                <i data-lucide="map-pin" class="contact-icon"></i>
+                                <span>
+                                   22C Brixton Road Mount <br>
+                                    Eden Auckland
+                                </span>
+                            </li>
+                            <li class="contact-item">
+                                <i data-lucide="phone" class="contact-icon"></i>
+                                <a href="tel:+6499876543" class="contact-link">(09) 987 6543</a>
+                            </li>
+                            <li class="contact-item">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                              <a href="mailto:support@urbanlets.co.nz" class="contact-link">support@urbanlets.co.nz</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="copyright-content">
+                        <p class="copyright-text">
+                            &copy; <span id="currentYear">2023</span> Urban Lets. All rights reserved.
+                        </p>
+                        <div class="copyright-links">
+                            <!-- <a href="#" class="copyright-link">Privacy Policy</a>
+                            <a href="#" class="copyright-link">Terms of Service</a> -->
+                            <p>Developed by International Data Solution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

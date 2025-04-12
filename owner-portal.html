@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Portal | Urban Lets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo-container">
+                    <div class="logo" id="logo">
+                        <img src="logo.png" alt="Urban Lets"
+                            class="logo-image">
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="owner-portal.html" class="dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="dropdown-link">Payment & Rental
+                                Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="tenant-service.html" class="dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="dropdown-link">Maintenance Request</a>
+                            <a href="rental-application.html" class="dropdown-link">Rental Application</a>
+                            <a href="notice-to-vacate.html" class="dropdown-link">Notice to Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="nav-link">About Us</a>
+                    <a href="contact-us.html" class="nav-link highlight">Contact Us</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-container">
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="owner-portal.html" class="mobile-dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="mobile-dropdown-link">Payment &
+                                Rental Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="tenant-service.html" class="mobile-dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="mobile-dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="mobile-dropdown-link">Maintenance
+                                Request</a>
+                            <a href="rental-application.html" class="mobile-dropdown-link">Rental
+                                Application</a>
+                            <a href="notice-to-vacate.html" class="mobile-dropdown-link">Notice to
+                                Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="mobile-nav-link">About Us</a>
+                    <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+                </nav>
+
+                <a href="contact-us.html" class="mobile-cta">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvcGVydHklMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=80');">
+        <div class="page-header-content">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i data-lucide="chevron-right"></i>
+                <a href="landlords.html">Landlords</a>
+                <i data-lucide="chevron-right"></i>
+                <span>Owner Portal</span>
+            </div>
+            <h1>Owner Portal</h1>
+            <p>Access your property management dashboard with real-time updates, financial reports, and more.</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-content">
+                    <h2 class="text-3xl font-light mb-4">Manage Your Properties with Ease</h2>
+                    <p class="text-gray-600 mb-4">Our owner portal puts you in control with 24/7 access to your property details, financial reports, and tenant information.</p>
+                    <p class="text-gray-600 mb-4">Stay connected to your investment properties no matter where you are, with our secure and user-friendly dashboard.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="bar-chart"></i>
+                            </div>
+                            <h3>Financial Reporting</h3>
+                            <p>View income and expense tracking, monthly statements, and tax documents all in one place.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="clipboard-list"></i>
+                            </div>
+                            <h3>Maintenance Tracking</h3>
+                            <p>Review maintenance requests, track progress, and approve work orders with ease.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h3>Tenant Information</h3>
+                            <p>Access tenant contact details, lease agreements, and communication history.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="calendar"></i>
+                            </div>
+                            <h3>Property Timeline</h3>
+                            <p>View important dates including lease renewals, inspections, and scheduled maintenance.</p>
+                        </div>
+                    </div>
+                    <div class="section-buttons mt-8">
+                        <a href="contact-us.html" class="btn-primary">Request Access <i data-lucide="arrow-right"></i></a>
+                        <a href="#" class="btn-secondary">Watch Demo</a>
+                    </div>
+                </div>
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGRhc2hib2FyZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Owner Portal Dashboard" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Key Features</span>
+                <h2 class="section-title">Everything You Need in One Place</h2>
+                <p class="section-subtitle">Our owner portal is designed to give you complete visibility and control over your property investments.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="wallet"></i>
+                    </div>
+                    <h3>Online Payments</h3>
+                    <p>View rental payments in real-time and receive automatic notifications when rent is collected.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3>Document Storage</h3>
+                    <p>Access important documents like lease agreements, insurance policies, and property photos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <h3>Communication Center</h3>
+                    <p>Message your property manager directly through the portal with any questions or concerns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3>Performance Metrics</h3>
+                    <p>Track your property's performance with visual reports on occupancy rates and rental yield.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="bell"></i>
+                    </div>
+                    <h3>Custom Alerts</h3>
+                    <p>Set up notifications for important events like lease renewals, inspections, or maintenance issues.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3>Secure Access</h3>
+                    <p>Rest easy knowing your property information is protected with bank-level security and encryption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to simplify your property management?</h2>
+                <p class="cta-subtitle">Get started with our owner portal today and take control of your investment properties.</p>
+                <div class="cta-buttons">
+                    <a href="contact-us.html" class="btn-primary">Contact Us <i data-lucide="arrow-right"></i></a>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="Urban Lets" class="footer-logo-image">
+                    </a>
+                    <p class="footer-about">Urban Lets is a premium property management company dedicated to providing exceptional service for both landlords and tenants.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Landlords</h4>
+                    <div class="footer-links">
+                        <a href="owner-portal.html" class="footer-link">Owner Portal</a>
+                        <a href="payment-collection.html" class="footer-link">Payment Collection</a>
+                        <a href="#" class="footer-link">Property Marketing</a>
+                        <a href="#" class="footer-link">Tenant Screening</a>
+                        <a href="#" class="footer-link">Property Maintenance</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Tenants</h4>
+                    <div class="footer-links">
+                        <a href="tenant-service.html" class="footer-link">Tenant Service</a>
+                        <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="footer-link">Rental Listings</a>
+                        <a href="maintenance-request.html" class="footer-link">Maintenance Requests</a>
+                        <a href="rental-application.html" class="footer-link">Rental Application</a>
+                        <a href="notice-to-vacate.html" class="footer-link">Notice to Vacate</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            22C Brixton Road Mount <br>
+                                    Eden Auckland
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="contact-icon"></i>
+                            <a href="tel:+11234567890" class="contact-link">(123) 456-7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                          <a href="mailto:support@urbanlets.co.nz" class="contact-link">support@urbanlets.co.nz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <div class="container copyright-content">
+                    <p class="copyright-text">&copy; <span id="currentYear"></span> Urban Lets. All rights reserved.</p>
+                    <div class="copyright-links">
+                        <!-- <a href="#" class="copyright-link">Privacy Policy</a>
+                        <a href="#" class="copyright-link">Terms of Service</a>
+                        <a href="#" class="copyright-link">Sitemap</a> -->
+                        <p >Developed by International Data Solution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

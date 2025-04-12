@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Request | Urban Lets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo-container">
+                    <div class="logo" id="logo">
+                        <img src="logo.png" alt="Urban Lets"
+                            class="logo-image">
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="owner-portal.html" class="dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="dropdown-link">Payment & Rental
+                                Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="tenant-service.html" class="dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="dropdown-link">Maintenance Request</a>
+                            <a href="rental-application.html" class="dropdown-link">Rental Application</a>
+                            <a href="notice-to-vacate.html" class="dropdown-link">Notice to Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="nav-link">About Us</a>
+                    <a href="contact-us.html" class="nav-link highlight">Contact Us</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-container">
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="owner-portal.html" class="mobile-dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="mobile-dropdown-link">Payment &
+                                Rental Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="tenant-service.html" class="mobile-dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="mobile-dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="mobile-dropdown-link">Maintenance
+                                Request</a>
+                            <a href="rental-application.html" class="mobile-dropdown-link">Rental
+                                Application</a>
+                            <a href="notice-to-vacate.html" class="mobile-dropdown-link">Notice to
+                                Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="mobile-nav-link">About Us</a>
+                    <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+                </nav>
+
+                <a href="contact-us.html" class="mobile-cta">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZSUyMHJlcGFpcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
+        <div class="page-header-content">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i data-lucide="chevron-right"></i>
+                <a href="#">Tenants</a>
+                <i data-lucide="chevron-right"></i>
+                <span>Maintenance Request</span>
+            </div>
+            <h1>Maintenance Request</h1>
+            <p>Submit a maintenance request for your rental property and track its progress.</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-content">
+                    <h2 class="text-3xl font-light mb-4">Fast & Reliable Maintenance</h2>
+                    <p class="text-gray-600 mb-4">We understand that maintenance issues can disrupt your daily life, which is why we strive to address all maintenance requests promptly and efficiently.</p>
+                    <p class="text-gray-600 mb-4">Our team of skilled maintenance technicians and trusted contractors are ready to tackle everything from minor repairs to major issues, ensuring your home remains comfortable and functional.</p>
+                    <div class="stats-grid mt-8">
+                        <div class="stat">
+                            <div class="stat-value">24hrs</div>
+                            <div class="stat-label">Response Time</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">98%</div>
+                            <div class="stat-label">First-visit Resolution</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">24/7</div>
+                            <div class="stat-label">Emergency Service</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhhbmR5bWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Maintenance Services" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Our Maintenance Process</h2>
+                <p class="section-subtitle">A simple and efficient process to address your maintenance needs.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3>1. Submit Request</h3>
+                    <p>Fill out the maintenance request form with details about the issue, photos if available, and preferred access times.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <h3>2. Confirmation</h3>
+                    <p>Receive a confirmation of your request with a tracking number and estimated response timeline.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="calendar"></i>
+                    </div>
+                    <h3>3. Scheduling</h3>
+                    <p>Our team will contact you to arrange a convenient time for the maintenance visit.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="tool"></i>
+                    </div>
+                    <h3>4. Service Visit</h3>
+                    <p>A skilled technician arrives at the scheduled time to assess and address the maintenance issue.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="clipboard-check"></i>
+                    </div>
+                    <h3>5. Completion</h3>
+                    <p>Once the repair is complete, you'll be asked to verify the work has been done to your satisfaction.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <h3>6. Follow-up</h3>
+                    <p>We'll check in to ensure the issue has been fully resolved and gather feedback on our service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Maintenance Request Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Submit a Request</span>
+                <h2 class="section-title">Maintenance Request Form</h2>
+                <p class="section-subtitle">Please provide as much detail as possible to help us address your maintenance needs efficiently.</p>
+            </div>
+            
+            <div class="form-wrapper shadow-lg">
+                <div class="form-content">
+                    <h2>Maintenance Request</h2>
+                    <p>Complete the form below to submit your maintenance request. For emergencies, please call our 24/7 emergency line at (123) 456-7890.</p>
+                    
+                    <form id="maintenanceForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="property" class="form-label">Property Address *</label>
+                            <input type="text" id="property" name="property" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="unit" class="form-label">Unit Number (if applicable)</label>
+                            <input type="text" id="unit" name="unit" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="category" class="form-label">Maintenance Category *</label>
+                            <select id="category" name="category" class="form-input" required>
+                                <option value="">Select a category</option>
+                                <option value="plumbing">Plumbing</option>
+                                <option value="electrical">Electrical</option>
+                                <option value="hvac">HVAC (Heating/Cooling)</option>
+                                <option value="appliance">Appliance</option>
+                                <option value="structural">Structural</option>
+                                <option value="pest">Pest Control</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="urgency" class="form-label">Urgency Level *</label>
+                            <select id="urgency" name="urgency" class="form-input" required>
+                                <option value="">Select urgency level</option>
+                                <option value="emergency">Emergency - Requires immediate attention</option>
+                                <option value="urgent">Urgent - Within 24 hours</option>
+                                <option value="normal">Normal - Within 3-5 days</option>
+                                <option value="low">Low - When convenient</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description" class="form-label">Description of Issue *</label>
+                            <textarea id="description" name="description" class="form-textarea" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="access" class="form-label">Preferred Access Instructions</label>
+                            <textarea id="access" name="access" class="form-textarea" placeholder="Preferred days/times, entry instructions, pets, etc."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="permission" class="form-label">Entry Permission</label>
+                            <div>
+                                <input type="checkbox" id="permission" name="permission">
+                                <label for="permission">I give permission for maintenance personnel to enter my unit if I am not present.</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Submit Request <i data-lucide="send"></i></button>
+                    </form>
+                </div>
+                <div class="form-image">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhbmR5bWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Maintenance Service">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Common Maintenance Issues -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Information</span>
+                <h2 class="section-title">Common Maintenance Issues</h2>
+                <p class="section-subtitle">Tips and information about common household maintenance problems.</p>
+            </div>
+            
+            <div class="landlord-faq">
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">Plumbing Issues</div>
+                        <div class="faq-answer" style="display: none;">
+                            <p>For minor clogs, try using a plunger before submitting a request. If you experience a major leak, locate your water shut-off valve and turn it off immediately, then submit an emergency maintenance request.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">HVAC Problems</div>
+                        <div class="faq-answer" style="display: none;">
+                            <p>Check if your thermostat has fresh batteries and is set to the correct mode. Ensure air filters are clean and vents aren't blocked by furniture. If the system isn't working properly after these checks, submit a maintenance request.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Electrical Issues</div>
+                        <div class="faq-answer" style="display: none;">
+                            <p>If you experience a power outage, check if it affects just your unit or the entire building. Check circuit breakers before submitting a request. Never attempt to fix electrical issues yourself - this is dangerous and violates most lease agreements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Appliance Malfunctions</div>
+                        <div class="faq-answer" style="display: none;">
+                            <p>Check that appliances are properly plugged in and that circuit breakers haven't tripped. For refrigerators, ensure vents aren't blocked and coils are dust-free. For dishwashers, clear any food debris from filters.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Lock and Key Issues</div>
+                        <div class="faq-answer" style="display: none;">
+                            <p>If you're locked out during business hours, contact our office. After hours, contact our emergency line. There may be a fee for lockout services. For damaged locks, submit a maintenance request immediately.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Pest Control</div>
+                        <div class="faq-answer" style="display: none;">
+                            <p>Keep your unit clean and store food in sealed containers to prevent pests. Report any pest sightings immediately. We provide regular preventative pest control in most properties, and can schedule additional treatments if needed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Need emergency maintenance assistance?</h2>
+                <p class="cta-subtitle">Call our 24/7 emergency maintenance line for immediate help.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+11234567890" class="btn-primary">Call (123) 456-7890 <i data-lucide="phone"></i></a>
+                    <a href="tenant-service.html" class="btn-secondary">Learn About Tenant Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="Urban Lets" class="footer-logo-image">
+                    </a>
+                    <p class="footer-about">Urban Lets is a premium property management company dedicated to providing exceptional service for both landlords and tenants.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Landlords</h4>
+                    <div class="footer-links">
+                        <a href="owner-portal.html" class="footer-link">Owner Portal</a>
+                        <a href="payment-collection.html" class="footer-link">Payment Collection</a>
+                        <a href="#" class="footer-link">Property Marketing</a>
+                        <a href="#" class="footer-link">Tenant Screening</a>
+                        <a href="#" class="footer-link">Property Maintenance</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Tenants</h4>
+                    <div class="footer-links">
+                        <a href="tenant-service.html" class="footer-link">Tenant Service</a>
+                        <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="footer-link">Rental Listings</a>
+                        <a href="maintenance-request.html" class="footer-link">Maintenance Requests</a>
+                        <a href="rental-application.html" class="footer-link">Rental Application</a>
+                        <a href="notice-to-vacate.html" class="footer-link">Notice to Vacate</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            22C Brixton Road Mount <br>
+                                    Eden Auckland
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="contact-icon"></i>
+                            <a href="tel:+11234567890" class="contact-link">(123) 456-7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                            <a href="mailto:info@urbanlets.com" class="contact-link">info@urbanlets.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <div class="container copyright-content">
+                    <p class="copyright-text">&copy; <span id="currentYear"></span> Urban Lets. All rights reserved.</p>
+                    <div class="copyright-links">
+                        <!-- <a href="#" class="copyright-link">Privacy Policy</a>
+                        <a href="#" class="copyright-link">Terms of Service</a>
+                        <a href="#" class="copyright-link">Sitemap</a> -->
+                        <p >Developed by International Data Solution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Form Submission Handler
+        document.getElementById('maintenanceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Normally you would send the form data to a server here
+            // For this example, we'll just show an alert
+            alert('Your maintenance request has been submitted! A confirmation email will be sent shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

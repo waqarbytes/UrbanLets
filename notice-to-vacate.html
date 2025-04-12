@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice to Vacate | Urban Lets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo-container">
+                    <div class="logo" id="logo">
+                        <img src="logo.png" alt="Urban Lets"
+                            class="logo-image">
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="owner-portal.html" class="dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="dropdown-link">Payment & Rental
+                                Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="tenant-service.html" class="dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="dropdown-link">Maintenance Request</a>
+                            <a href="rental-application.html" class="dropdown-link">Rental Application</a>
+                            <a href="notice-to-vacate.html" class="dropdown-link">Notice to Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="nav-link">About Us</a>
+                    <a href="contact-us.html" class="nav-link highlight">Contact Us</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-container">
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="owner-portal.html" class="mobile-dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="mobile-dropdown-link">Payment &
+                                Rental Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="tenant-service.html" class="mobile-dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="mobile-dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="mobile-dropdown-link">Maintenance
+                                Request</a>
+                            <a href="rental-application.html" class="mobile-dropdown-link">Rental
+                                Application</a>
+                            <a href="notice-to-vacate.html" class="mobile-dropdown-link">Notice to
+                                Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="mobile-nav-link">About Us</a>
+                    <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+                </nav>
+
+                <a href="contact-us.html" class="mobile-cta">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bW92aW5nJTIwaG91c2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1200&q=80');">
+        <div class="page-header-content">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i data-lucide="chevron-right"></i>
+                <a href="#">Tenants</a>
+                <i data-lucide="chevron-right"></i>
+                <span>Notice to Vacate</span>
+            </div>
+            <h1>Notice to Vacate</h1>
+            <p>Submit your intent to vacate and understand the move-out process.</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-content">
+                    <h2 class="text-3xl font-light mb-4">Moving Out Made Simple</h2>
+                    <p class="text-gray-600 mb-4">We understand that life changes can necessitate a move, and we aim to make the moving out process as straightforward and stress-free as possible.</p>
+                    <p class="text-gray-600 mb-4">By providing proper notice and following our move-out guidelines, you can ensure a smooth transition and the prompt return of your security deposit.</p>
+                    <div class="stats-grid mt-8">
+                        <div class="stat">
+                            <div class="stat-value">30 Days</div>
+                            <div class="stat-label">Required Notice</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">Documented Process</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">30 Days</div>
+                            <div class="stat-label">Deposit Return</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1vdmluZyUyMGhvdXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Moving Out" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Move-Out Process</span>
+                <h2 class="section-title">Vacating Your Rental</h2>
+                <p class="section-subtitle">Follow these steps for a smooth move-out experience.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3>1. Submit Notice</h3>
+                    <p>Complete the notice to vacate form at least 30 days before your intended move-out date as required by your lease.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <h3>2. Receive Confirmation</h3>
+                    <p>We'll review your notice and provide confirmation along with detailed move-out instructions and cleaning checklist.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="calendar"></i>
+                    </div>
+                    <h3>3. Schedule Inspection</h3>
+                    <p>Arrange for a move-out inspection to be conducted after you have vacated and cleaned the property.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="refresh-cw"></i>
+                    </div>
+                    <h3>4. Clean the Property</h3>
+                    <p>Thoroughly clean the property according to the provided checklist to avoid cleaning charges.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="key"></i>
+                    </div>
+                    <h3>5. Return Keys</h3>
+                    <p>Return all keys, access cards, and remotes to our office on or before your move-out date.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="credit-card"></i>
+                    </div>
+                    <h3>6. Receive Deposit</h3>
+                    <p>Your security deposit will be processed within 30 days with an itemized list of any deductions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Notice to Vacate Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get Started</span>
+                <h2 class="section-title">Notice to Vacate Form</h2>
+                <p class="section-subtitle">Complete this form to officially notify us of your intent to vacate.</p>
+            </div>
+            
+            <div class="form-wrapper shadow-lg">
+                <div class="form-content">
+                    <h2>Notice to Vacate</h2>
+                    <p>Please fill out this form at least 30 days before your intended move-out date as required by your lease agreement.</p>
+                    
+                    <form id="noticeToVacateForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="property" class="form-label">Property Address *</label>
+                            <input type="text" id="property" name="property" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="unit" class="form-label">Unit Number (if applicable)</label>
+                            <input type="text" id="unit" name="unit" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="moveOutDate" class="form-label">Intended Move-Out Date *</label>
+                            <input type="date" id="moveOutDate" name="moveOutDate" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reasonForMoving" class="form-label">Reason for Moving</label>
+                            <select id="reasonForMoving" name="reasonForMoving" class="form-input">
+                                <option value="">Select a reason</option>
+                                <option value="relocating">Relocating to another area</option>
+                                <option value="boughtHome">Purchased a home</option>
+                                <option value="rentIncrease">Rent increase</option>
+                                <option value="jobChange">Job change</option>
+                                <option value="familyChange">Family circumstances</option>
+                                <option value="propertyIssues">Property concerns</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="otherReason" class="form-label">If "Other," please specify:</label>
+                            <textarea id="otherReason" name="otherReason" class="form-textarea"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="forwardingAddress" class="form-label">Forwarding Address for Security Deposit *</label>
+                            <textarea id="forwardingAddress" name="forwardingAddress" class="form-textarea" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inspectionPreference" class="form-label">Move-Out Inspection Preference</label>
+                            <select id="inspectionPreference" name="inspectionPreference" class="form-input">
+                                <option value="present">I would like to be present</option>
+                                <option value="notPresent">I do not need to be present</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="additionalComments" class="form-label">Additional Comments</label>
+                            <textarea id="additionalComments" name="additionalComments" class="form-textarea"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div>
+                                <input type="checkbox" id="acknowledgment" name="acknowledgment" required>
+                                <label for="acknowledgment">I understand that I am responsible for rent until the end of my lease term or through the proper notice period, and that my security deposit will be processed according to the terms of my lease agreement. *</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Submit Notice <i data-lucide="send"></i></button>
+                    </form>
+                </div>
+                <div class="form-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvcGVydHklMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Property Management">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cleaning Checklist -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Resources</span>
+                <h2 class="section-title">Move-Out Cleaning Checklist</h2>
+                <p class="section-subtitle">Use this checklist to ensure you leave the property in good condition.</p>
+            </div>
+            
+            <div class="section-grid">
+                <div class="section-content">
+                    <h3 class="text-xl font-medium mb-4">General</h3>
+                    <ul class="list-disc pl-5 mb-6 space-y-2">
+                        <li>Remove all personal belongings and furniture</li>
+                        <li>Patch and spackle nail holes in walls</li>
+                        <li>Clean all light fixtures and replace burnt-out bulbs</li>
+                        <li>Clean all windows, tracks, and windowsills</li>
+                        <li>Dust all blinds and wash curtains if applicable</li>
+                        <li>Vacuum all carpets thoroughly</li>
+                        <li>Sweep and mop all hard surface floors</li>
+                        <li>Clean all baseboards and door frames</li>
+                        <li>Remove all trash and debris from the property</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-medium mb-4">Kitchen</h3>
+                    <ul class="list-disc pl-5 mb-6 space-y-2">
+                        <li>Clean oven inside and out, including racks and drip pans</li>
+                        <li>Clean stovetop, burners, and control knobs</li>
+                        <li>Clean microwave inside and out</li>
+                        <li>Clean refrigerator/freezer inside and out, and leave running</li>
+                        <li>Clean all countertops and backsplashes</li>
+                        <li>Clean sink, faucet, and drain</li>
+                        <li>Clean all cabinets and drawers inside and out</li>
+                        <li>Clean dishwasher inside and out, including filters</li>
+                        <li>Clean range hood and filter</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-medium mb-4">Bathrooms</h3>
+                    <ul class="list-disc pl-5 mb-6 space-y-2">
+                        <li>Clean toilet thoroughly including base and behind</li>
+                        <li>Clean bathtub/shower including doors/curtains and remove soap scum</li>
+                        <li>Clean sink, countertops, and cabinets</li>
+                        <li>Clean mirror and medicine cabinet</li>
+                        <li>Clean all tile and grout</li>
+                        <li>Clean exhaust fan cover</li>
+                    </ul>
+                </div>
+                
+                <div class="section-content">
+                    <h3 class="text-xl font-medium mb-4">Exterior & Misc.</h3>
+                    <ul class="list-disc pl-5 mb-6 space-y-2">
+                        <li>Remove all items from patio/balcony/yard</li>
+                        <li>Sweep patio/balcony area</li>
+                        <li>Mow lawn and trim bushes (if applicable)</li>
+                        <li>Remove all trash from exterior of property</li>
+                        <li>Clean out garage/storage areas</li>
+                        <li>Replace air filters</li>
+                        <li>Replace smoke detector batteries if needed</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-medium mb-4">Final Steps</h3>
+                    <ul class="list-disc pl-5 mb-6 space-y-2">
+                        <li>Take photos of the clean property for your records</li>
+                        <li>Return all keys, garage openers, access cards, etc.</li>
+                        <li>Provide forwarding address for security deposit return</li>
+                        <li>Notify utility companies of your move-out date</li>
+                        <li>Update your address with USPS</li>
+                    </ul>
+                    
+                    <div class="bg-light-gray p-6 rounded-lg mt-6">
+                        <h3 class="text-lg font-medium mb-2">Important Note:</h3>
+                        <p>Properties must be cleaned to a professional standard. If the property requires additional cleaning after you vacate, appropriate charges will be deducted from your security deposit. For optimal results, consider hiring a professional cleaning service.</p>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="#" class="btn-secondary">Download Printable Checklist <i data-lucide="download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="landlord-faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about moving out and security deposits.</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">When will I receive my security deposit?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Security deposits are processed within 30 days of your move-out date. You will receive an itemized statement showing any deductions along with your refund, which will be sent to your provided forwarding address.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What if I need to break my lease early?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>If you need to terminate your lease before the end date, please contact us immediately. Early termination typically requires payment of a lease break fee as specified in your lease agreement, plus rent until a new tenant is found.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to have the carpets professionally cleaned?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>This depends on your lease agreement. Some leases require professional carpet cleaning upon move-out, while others only require thorough vacuuming. Check your lease or contact us to confirm. If professional cleaning is required, please provide a receipt.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What if I discover damage during move-out cleaning?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>If you discover damage beyond normal wear and tear, document it with photos and inform us immediately. Being proactive often results in lower repair costs than if the damage is discovered during inspection.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I use my security deposit for my last month's rent?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>No, security deposits cannot be used as rent payment. You must pay your rent through the end of your lease or notice period. Security deposits are held to cover potential damages or unpaid balances after you vacate.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What happens if I don't give proper notice?</div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>If you fail to provide the required notice period (typically 30 days), you may be charged for rent through the notice period even after you've vacated. Always provide notice in writing according to your lease terms.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Have more questions about moving out?</p>
+                <a href="contact-us.html" class="btn-primary">Contact Our Team <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Need help with your move-out process?</h2>
+                <p class="cta-subtitle">Our team is here to answer your questions and guide you through a smooth transition.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+11234567890" class="btn-primary">Call (123) 456-7890 <i data-lucide="phone"></i></a>
+                    <a href="tenant-service.html" class="btn-secondary">Tenant Resources</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="Urban Lets" class="footer-logo-image">
+                    </a>
+                    <p class="footer-about">Urban Lets is a premium property management company dedicated to providing exceptional service for both landlords and tenants.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Landlords</h4>
+                    <div class="footer-links">
+                        <a href="owner-portal.html" class="footer-link">Owner Portal</a>
+                        <a href="payment-collection.html" class="footer-link">Payment Collection</a>
+                        <a href="#" class="footer-link">Property Marketing</a>
+                        <a href="#" class="footer-link">Tenant Screening</a>
+                        <a href="#" class="footer-link">Property Maintenance</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Tenants</h4>
+                    <div class="footer-links">
+                        <a href="tenant-service.html" class="footer-link">Tenant Service</a>
+                        <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="footer-link">Rental Listings</a>
+                        <a href="maintenance-request.html" class="footer-link">Maintenance Requests</a>
+                        <a href="rental-application.html" class="footer-link">Rental Application</a>
+                        <a href="notice-to-vacate.html" class="footer-link">Notice to Vacate</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            22C Brixton Road Mount <br>
+                                    Eden Auckland
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="contact-icon"></i>
+                            <a href="tel:+11234567890" class="contact-link">(123) 456-7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                          <a href="mailto:support@urbanlets.co.nz" class="contact-link">support@urbanlets.co.nz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <div class="container copyright-content">
+                    <p class="copyright-text">&copy; <span id="currentYear"></span> Urban Lets. All rights reserved.</p>
+                    <div class="copyright-links">
+                        <!-- <a href="#" class="copyright-link">Privacy Policy</a>
+                        <a href="#" class="copyright-link">Terms of Service</a>
+                        <a href="#" class="copyright-link">Sitemap</a> -->
+                        <p >Developed by International Data Solution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Form Submission Handler
+        document.getElementById('noticeToVacateForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Normally you would send the form data to a server here
+            // For this example, we'll just show an alert
+            alert('Your notice to vacate has been submitted! A confirmation email will be sent shortly with detailed move-out instructions.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

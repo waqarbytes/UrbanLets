@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landlords - Urban Lets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header - Same as index.html -->
+        <header class="navbar" id="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <a href="index.html" class="logo-container">
+                        <div class="logo" id="logo">
+                            <img src="logo.png" alt="Urban Lets"
+                                class="logo-image">
+                        </div>
+                    </a>
+
+                    <nav class="desktop-nav">
+                        <a href="index.html" class="nav-link active">Home</a>
+
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                                <span>Landlords</span>
+                                <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="owner-portal.html" class="dropdown-link">Owner Portal</a>
+                                <a href="payment-collection.html" class="dropdown-link">Payment & Rental
+                                    Collection</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                                <span>Tenants</span>
+                                <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="tenant-service.html" class="dropdown-link">Tenant Service</a>
+                                <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="dropdown-link">Rental Listings</a>
+                                <a href="maintenance-request.html" class="dropdown-link">Maintenance Request</a>
+                                <a href="rental-application.html" class="dropdown-link">Rental Application</a>
+                                <a href="notice-to-vacate.html" class="dropdown-link">Notice to Vacate</a>
+                            </div>
+                        </div>
+
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                        <a href="contact-us.html" class="nav-link highlight">Contact Us</a>
+                    </nav>
+
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-container">
+                    <nav class="mobile-nav">
+                        <a href="index.html" class="mobile-nav-link">Home</a>
+
+                        <div class="mobile-dropdown">
+                            <button class="mobile-dropdown-btn">
+                                <span>Landlords</span>
+                                <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                            </button>
+                            <div class="mobile-dropdown-content">
+                                <a href="owner-portal.html" class="mobile-dropdown-link">Owner Portal</a>
+                                <a href="payment-collection.html" class="mobile-dropdown-link">Payment &
+                                    Rental Collection</a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-dropdown">
+                            <button class="mobile-dropdown-btn">
+                                <span>Tenants</span>
+                                <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                            </button>
+                            <div class="mobile-dropdown-content">
+                                <a href="tenant-service.html" class="mobile-dropdown-link">Tenant Service</a>
+                                <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="mobile-dropdown-link">Rental Listings</a>
+                                <a href="maintenance-request.html" class="mobile-dropdown-link">Maintenance
+                                    Request</a>
+                                <a href="rental-application.html" class="mobile-dropdown-link">Rental
+                                    Application</a>
+                                <a href="notice-to-vacate.html" class="mobile-dropdown-link">Notice to
+                                    Vacate</a>
+                            </div>
+                        </div>
+
+                        <a href="about-us.html" class="mobile-nav-link">About Us</a>
+                        <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+                    </nav>
+
+                    <a href="contact-us.html" class="mobile-cta">Get In Touch</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Page Header -->
+            <section class="page-header"
+                style="background-image: url('https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80');">
+                <div class="container">
+                    <div class="page-header-content">
+                        <nav class="breadcrumbs">
+                            <a href="index.html">Home</a>
+                            <i data-lucide="chevron-right"></i>
+                            <span>Landlords</span>
+                        </nav>
+                        <h1>For Landlords</h1>
+                        <p>Maximize your rental property's potential with our comprehensive management services</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction Section -->
+            <section class="landlord-intro">
+                <div class="container">
+                    <div class="section-grid">
+                        <div class="section-content">
+                            <h2>Let Us Handle Your Property Management Needs</h2>
+                            <p>
+                                At Urban Lets, we understand that managing rental properties can be time-consuming
+                                and complex. Our comprehensive property management services are designed to maximize
+                                your rental income while minimizing your stress and involvement.
+                            </p>
+                            <p>
+                                With years of experience in the rental market, we offer tailored solutions that
+                                protect your investment and enhance its value over time.
+                            </p>
+                            <div class="section-buttons">
+                                <a href="#management-services" class="btn-primary">
+                                    Our Services <i data-lucide="arrow-right"></i>
+                                </a>
+                                <a href="contact-us.html" class="btn-secondary">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-image">
+                            <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                                alt="Property management services">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us Section -->
+            <section class="landlord-why-us">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-tag">Why Choose Us</p>
+                        <h2 class="section-title">
+                            Expert Property Management
+                        </h2>
+                        <p class="section-subtitle">
+                            With Urban Lets, you get more than just property management – you get a dedicated
+                            partner committed to maximizing your investment's potential.
+                        </p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="search"></i>
+                            </div>
+                            <h3>Tenant Screening</h3>
+                            <p>
+                                Rigorous screening process to find reliable, responsible tenants for your property.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="coins"></i>
+                            </div>
+                            <h3>Rent Collection</h3>
+                            <p>
+                                Efficient rent collection and financial reporting with direct deposits to your account.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="wrench"></i>
+                            </div>
+                            <h3>Maintenance</h3>
+                            <p>
+                                Prompt handling of maintenance issues with our network of trusted contractors.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="file-text"></i>
+                            </div>
+                            <h3>Legal Compliance</h3>
+                            <p>
+                                Stay compliant with all rental regulations and property laws for peace of mind.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="bar-chart"></i>
+                            </div>
+                            <h3>Financial Reporting</h3>
+                            <p>
+                                Detailed monthly reports on property performance and financial status.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <h3>Property Protection</h3>
+                            <p>
+                                Regular inspections and proactive maintenance to protect your investment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Management Services Section -->
+            <section id="management-services" class="landlord-services">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-tag">Our Services</p>
+                        <h2 class="section-title">
+                            Comprehensive Management Services
+                        </h2>
+                        <p class="section-subtitle">
+                            We offer flexible property management packages tailored to your specific needs.
+                        </p>
+                    </div>
+
+                    <div class="services-table">
+                        <div class="table-header">
+                            <div class="table-cell">Service Features</div>
+                            <div class="table-cell">Essential</div>
+                            <div class="table-cell">Premium</div>
+                            <div class="table-cell highlight">Complete</div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Tenant Screening</div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Rent Collection</div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Tenant Relations</div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Maintenance Coordination</div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Property Inspections</div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Online Owner Portal</div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Monthly Financial Reports</div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell"><i data-lucide="check"></i></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Eviction Protection</div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Rent Guarantee</div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="table-cell">Full Legal Compliance</div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell"></div>
+                            <div class="table-cell highlight"><i data-lucide="check"></i></div>
+                        </div>
+
+                        <div class="table-footer">
+                            <div class="table-cell">Monthly Fee</div>
+                            <div class="table-cell">6% Rental Income</div>
+                            <div class="table-cell">8% Rental Income</div>
+                            <div class="table-cell highlight">10% Rental Income</div>
+                        </div>
+                    </div>
+
+                    <div class="services-cta">
+                        <p>Contact us to discuss which management package is right for your property.</p>
+                        <a href="contact-us.html" class="btn-primary">
+                            Get Started <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="landlord-testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-tag">Testimonials</p>
+                        <h2 class="section-title">
+                            What Our Landlords Say
+                        </h2>
+                    </div>
+
+                    <div class="testimonial-cards">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i data-lucide="quote"></i>
+                            </div>
+                            <blockquote>
+                                "Urban Lets has managed my rental properties for over 5 years. Their professional
+                                approach and attention to detail have increased my rental income while reducing my
+                                stress."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+                                    alt="James Wilson" class="author-image">
+                                <div class="author-info">
+                                    <div class="author-name">James Wilson</div>
+                                    <div class="author-role">Property Owner, 5 years</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i data-lucide="quote"></i>
+                            </div>
+                            <blockquote>
+                                "I live overseas and was worried about managing my Auckland property. Urban Lets handles
+                                everything seamlessly, giving me peace of mind and consistent returns."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+                                    alt="Sarah Lin" class="author-image">
+                                <div class="author-info">
+                                    <div class="author-name">Sarah Lin</div>
+                                    <div class="author-role">Overseas Investor</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i data-lucide="quote"></i>
+                            </div>
+                            <blockquote>
+                                "Since switching to Urban Lets, tenant turnover has decreased significantly, and my
+                                properties are maintained to a higher standard. The online portal makes staying updated
+                                easy."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+                                    alt="Michael Thomas" class="author-image">
+                                <div class="author-info">
+                                    <div class="author-name">Michael Thomas</div>
+                                    <div class="author-role">Multi-property Owner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="landlord-faq">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-tag">FAQ</p>
+                        <h2 class="section-title">
+                            Frequently Asked Questions
+                        </h2>
+                        <p class="section-subtitle">
+                            Get answers to common questions about our property management services.
+                        </p>
+                    </div>
+
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3 class="faq-question">What are your management fees?</h3>
+                            <div class="faq-answer">
+                                <p>
+                                    Our management fees range from 6% to 10% of the monthly rental income,
+                                    depending on the level of service you choose and the type of property.
+                                    Contact us for a personalized quote.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3 class="faq-question">How do you screen potential tenants?</h3>
+                            <div class="faq-answer">
+                                <p>
+                                    We conduct thorough background checks including credit history, rental
+                                    history, employment verification, income verification, and reference checks
+                                    to ensure we find reliable tenants.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3 class="faq-question">How quickly can you find tenants for my property?</h3>
+                            <div class="faq-answer">
+                                <p>
+                                    On average, we place qualified tenants within 2-3 weeks. Our extensive
+                                    marketing reach and tenant database allow us to match properties with suitable
+                                    tenants quickly and efficiently.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3 class="faq-question">How are maintenance issues handled?</h3>
+                            <div class="faq-answer">
+                                <p>
+                                    We have a network of trusted contractors who provide quality work at competitive
+                                    rates. For minor issues, we handle them promptly without bothering you. For larger
+                                    repairs, we'll consult with you before proceeding.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3 class="faq-question">What happens if a tenant doesn't pay rent?</h3>
+                            <div class="faq-answer">
+                                <p>
+                                    We have robust rent collection procedures. If a tenant fails to pay, we immediately
+                                    begin the follow-up process according to legal requirements. Our premium and
+                                    complete
+                                    packages also include eviction protection and rent guarantees.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3 class="faq-question">How often will I receive financial statements?</h3>
+                            <div class="faq-answer">
+                                <p>
+                                    Monthly financial statements are provided to all owners on our premium and complete
+                                    plans. These include income, expenses, and any upcoming maintenance needs. You'll
+                                    also
+                                    have 24/7 access to your owner portal for real-time information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-cta">
+                        <p>Have more questions about our property management services?</p>
+                        <a href="contact-us.html" class="btn-primary">
+                            Contact Us <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready to Maximize Your Rental Income?</h2>
+                        <p class="cta-subtitle">
+                            Let us take the stress out of property management while optimizing your returns.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="contact-us.html" class="btn-primary">
+                                Get Started Today <i data-lucide="arrow-right"></i>
+                            </a>
+                            <a href="owner-portal.html" class="btn-secondary">
+                                Learn About Owner Portal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer - Same as index.html -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Column 1: Logo & About -->
+                    <div class="footer-col">
+                        <a href="index.html" class="footer-logo">
+                            <img src="logo.png" alt="Urban Lets"
+                                class="footer-logo-image">
+                        </a>
+                        <p class="footer-about">
+                            Urban Lets provides premier room rental services with a focus on
+                            quality shared living spaces and exceptional property management.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Quick Links -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="landlords.html" class="footer-link">Landlords</a></li>
+                            <li><a href="tenants.html" class="footer-link">Tenants</a></li>
+                            <li><a href="about-us.html" class="footer-link">About Us</a></li>
+                            <li><a href="contact-us.html" class="footer-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Services -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="owner-portal.html" class="footer-link">Owner Portal</a></li>
+                            <li><a href="payment-collection.html" class="footer-link">Payment Collection</a>
+                            </li>
+                            <li><a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="footer-link">Rental Listings</a></li>
+                            <li><a href="maintenance-request.html" class="footer-link">Maintenance Requests</a>
+                            </li>
+                            <li><a href="rental-application.html" class="footer-link">Rental Applications</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Contact -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Contact Us</h3>
+                        <ul class="footer-contact">
+                            <li class="contact-item">
+                                <i data-lucide="map-pin" class="contact-icon"></i>
+                                <span>
+                                    123 Property Lane, Suite 101<br>
+                                    Auckland, New Zealand
+                                </span>
+                            </li>
+                            <li class="contact-item">
+                                <i data-lucide="phone" class="contact-icon"></i>
+                                <a href="tel:+6499876543" class="contact-link">(09) 987 6543</a>
+                            </li>
+                            <li class="contact-item">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                              <a href="mailto:support@urbanlets.co.nz" class="contact-link">support@urbanlets.co.nz</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="copyright-content">
+                        <p class="copyright-text">
+                            &copy; <span id="currentYear">2023</span> Urban Lets. All rights reserved.
+                        </p>
+                        <div class="copyright-links">
+                            <!-- <a href="#" class="copyright-link">Privacy Policy</a>
+                            <a href="#" class="copyright-link">Terms of Service</a> -->
+                            <p >Developed by International Data Solution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

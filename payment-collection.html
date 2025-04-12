@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment & Rental Collection | Urban Lets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo-container">
+                    <div class="logo" id="logo">
+                        <img src="logo.png" alt="Urban Lets"
+                            class="logo-image">
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="owner-portal.html" class="dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="dropdown-link">Payment & Rental
+                                Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="tenant-service.html" class="dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="dropdown-link">Maintenance Request</a>
+                            <a href="rental-application.html" class="dropdown-link">Rental Application</a>
+                            <a href="notice-to-vacate.html" class="dropdown-link">Notice to Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="nav-link">About Us</a>
+                    <a href="contact-us.html" class="nav-link highlight">Contact Us</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-container">
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Landlords</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="owner-portal.html" class="mobile-dropdown-link">Owner Portal</a>
+                            <a href="payment-collection.html" class="mobile-dropdown-link">Payment &
+                                Rental Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-btn">
+                            <span>Tenants</span>
+                            <i data-lucide="chevron-down" class="mobile-dropdown-icon"></i>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="tenant-service.html" class="mobile-dropdown-link">Tenant Service</a>
+                            <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="mobile-dropdown-link">Rental Listings</a>
+                            <a href="maintenance-request.html" class="mobile-dropdown-link">Maintenance
+                                Request</a>
+                            <a href="rental-application.html" class="mobile-dropdown-link">Rental
+                                Application</a>
+                            <a href="notice-to-vacate.html" class="mobile-dropdown-link">Notice to
+                                Vacate</a>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="mobile-nav-link">About Us</a>
+                    <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+                </nav>
+
+                <a href="contact-us.html" class="mobile-cta">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGF5bWVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
+        <div class="page-header-content">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i data-lucide="chevron-right"></i>
+                <a href="landlords.html">Landlords</a>
+                <i data-lucide="chevron-right"></i>
+                <span>Payment & Rental Collection</span>
+            </div>
+            <h1>Payment & Rental Collection</h1>
+            <p>Streamlined rent collection, automated payments, and real-time financial reporting.</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-content">
+                    <h2 class="text-3xl font-light mb-4">Hassle-Free Rental Income</h2>
+                    <p class="text-gray-600 mb-4">Our streamlined payment collection system ensures you receive your rental income on time, every time, without the hassle of chasing payments.</p>
+                    <p class="text-gray-600 mb-4">We handle the entire process from rent collection to financial reporting, giving you peace of mind and more time to focus on what matters to you.</p>
+                    <div class="stats-grid mt-8">
+                        <div class="stat">
+                            <div class="stat-value">99.8%</div>
+                            <div class="stat-label">Collection Rate</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">24hrs</div>
+                            <div class="stat-label">Payment Processing</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">Financial Transparency</div>
+                        </div>
+                    </div>
+                    <div class="section-buttons mt-8">
+                        <a href="contact-us.html" class="btn-primary">Get Started <i data-lucide="arrow-right"></i></a>
+                        <a href="#" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHBheW1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Payment Collection" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <!-- <section class="landlord-services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Comprehensive Payment Solutions</h2>
+                <p class="section-subtitle">Compare our payment collection services to see how we can help you maximize your rental income.</p>
+            </div>
+            
+            <div class="services-table">
+                <div class="table-header">
+                    <div class="table-cell">Service Feature</div>
+                    <div class="table-cell">Basic</div>
+                    <div class="table-cell">Standard</div>
+                    <div class="table-cell">Premium</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">Automated Rent Collection</div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">Multiple Payment Methods</div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">Late Payment Reminders</div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">Monthly Financial Reports</div>
+                    <div class="table-cell"><i data-lucide="minus"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">Late Fee Enforcement</div>
+                    <div class="table-cell"><i data-lucide="minus"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">Security Deposit Management</div>
+                    <div class="table-cell"><i data-lucide="minus"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">Annual Financial Summary</div>
+                    <div class="table-cell"><i data-lucide="minus"></i></div>
+                    <div class="table-cell"><i data-lucide="minus"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">Tax Document Preparation</div>
+                    <div class="table-cell"><i data-lucide="minus"></i></div>
+                    <div class="table-cell"><i data-lucide="minus"></i></div>
+                    <div class="table-cell"><i data-lucide="check"></i></div>
+                </div>
+                
+                <div class="table-footer">
+                    <div class="table-cell">Monthly Fee</div>
+                    <div class="table-cell">$49</div>
+                    <div class="table-cell">$99</div>
+                    <div class="table-cell highlight">$149</div>
+                </div>
+            </div>
+            
+            <div class="services-cta">
+                <p>Not sure which plan is right for you? Contact us for a personalized recommendation.</p>
+                <a href="contact-us.html" class="btn-primary">Contact Us <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Process Section -->
+    <section class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Our Payment Collection Process</h2>
+                <p class="section-subtitle">A straightforward process designed to ensure timely payments and complete transparency.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="calendar"></i>
+                    </div>
+                    <h3>1. Rent Schedule</h3>
+                    <p>We establish a clear rent schedule with your tenants, specifying payment amounts and due dates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="bell"></i>
+                    </div>
+                    <h3>2. Payment Reminders</h3>
+                    <p>Automated reminders are sent to tenants before rent is due to ensure timely payments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="credit-card"></i>
+                    </div>
+                    <h3>3. Flexible Collection</h3>
+                    <p>Tenants can pay through multiple convenient methods including online, direct deposit, or auto-pay.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <h3>4. Payment Verification</h3>
+                    <p>Our team verifies all payments and follows up on any late or missing payments promptly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="send"></i>
+                    </div>
+                    <h3>5. Owner Disbursement</h3>
+                    <p>Rental income is transferred to your account quickly and securely once processed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3>6. Financial Reporting</h3>
+                    <p>Detailed monthly statements show all income, expenses, and fees for complete transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <!-- <section class="landlord-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Landlords Say</h2>
+                <p class="section-subtitle">Hear from property owners who use our payment collection services.</p>
+            </div>
+            
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <blockquote>
+                        Since switching to Urban Lets for my rental payments, I haven't had to worry about late payments or tracking down tenants. The money just shows up in my account like clockwork.
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Robert Johnson" class="author-image">
+                        <div>
+                            <div class="author-name">Robert Johnson</div>
+                            <div class="author-role">Property Owner, 5 units</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <blockquote>
+                        The monthly financial reports are fantastic. I can see exactly what's happening with my rental income and expenses without having to do any accounting work myself.
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Williams" class="author-image">
+                        <div>
+                            <div class="author-name">Sarah Williams</div>
+                            <div class="author-role">Investment Property Owner</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <blockquote>
+                        I appreciate the security deposit management. It's handled professionally and legally, which protects both my interests and my tenants. One less thing to worry about.
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David Chen" class="author-image">
+                        <div>
+                            <div class="author-name">David Chen</div>
+                            <div class="author-role">Multi-property Investor</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to simplify your rental income?</h2>
+                <p class="cta-subtitle">Let us handle your payment collection while you enjoy the benefits of stress-free property ownership.</p>
+                <div class="cta-buttons">
+                    <a href="contact-us.html" class="btn-primary">Get Started <i data-lucide="arrow-right"></i></a>
+                    <a href="owner-portal.html" class="btn-secondary">Explore Owner Portal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="Urban Lets" class="footer-logo-image">
+                    </a>
+                    <p class="footer-about">Urban Lets is a premium property management company dedicated to providing exceptional service for both landlords and tenants.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Landlords</h4>
+                    <div class="footer-links">
+                        <a href="owner-portal.html" class="footer-link">Owner Portal</a>
+                        <a href="payment-collection.html" class="footer-link">Payment Collection</a>
+                        <a href="#" class="footer-link">Property Marketing</a>
+                        <a href="#" class="footer-link">Tenant Screening</a>
+                        <a href="#" class="footer-link">Property Maintenance</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Tenants</h4>
+                    <div class="footer-links">
+                        <a href="tenant-service.html" class="footer-link">Tenant Service</a>
+                        <a href="https://www.trademe.co.nz/a/property/flatmates-wanted/listing/5235422959" class="footer-link">Rental Listings</a>
+                        <a href="maintenance-request.html" class="footer-link">Maintenance Requests</a>
+                        <a href="rental-application.html" class="footer-link">Rental Application</a>
+                        <a href="notice-to-vacate.html" class="footer-link">Notice to Vacate</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            22C Brixton Road Mount <br>
+                                    Eden Auckland
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="contact-icon"></i>
+                            <a href="tel:+11234567890" class="contact-link">(123) 456-7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                          <a href="mailto:support@urbanlets.co.nz" class="contact-link">support@urbanlets.co.nz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <div class="container copyright-content">
+                    <p class="copyright-text">&copy; <span id="currentYear"></span> Urban Lets. All rights reserved.</p>
+                    <div class="copyright-links">
+                        <!-- <a href="#" class="copyright-link">Privacy Policy</a>
+                        <a href="#" class="copyright-link">Terms of Service</a>
+                        <a href="#" class="copyright-link">Sitemap</a> -->
+                        <p >Developed by International Data Solution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
