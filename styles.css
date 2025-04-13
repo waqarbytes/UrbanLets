@@ -2001,3 +2001,122 @@ body.ai-drawer-open {
 .bg-white:first-of-type {
     padding-top: 6rem; /* Increase this value for more space */
 }
+
+
+
+
+/* Mobile Menu Fixes */
+.mobile-menu {
+    top: 0;
+    right: -100%;
+    width: 80%; /* Adjust width as needed */
+    max-width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.mobile-nav {
+    padding-top: 4rem;
+}
+
+.mobile-nav-link, .mobile-dropdown-btn {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* Form Responsiveness Fixes */
+.form-input, .form-textarea, select.form-input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Section Spacing Fixes */
+.section-padding {
+    padding: 2rem 1rem;
+}
+
+@media (max-width: 767px) {
+    .section-header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Image Scaling Fixes */
+.section-image img, .form-image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Button Fixes */
+.btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Table/Grid Fixes */
+@media (max-width: 767px) {
+    .features-grid, .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Footer Fixes */
+@media (max-width: 767px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-col {
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* Breadcrumb Fixes */
+.breadcrumbs {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Map Fixes */
+.map-container iframe {
+    min-height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
